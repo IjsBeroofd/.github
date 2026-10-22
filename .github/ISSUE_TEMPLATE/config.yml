@@ -1,0 +1,3 @@
+# One template, used for everything. Blank issues stay available for the genuinely
+# shapeless case, but the template is the default path.
+blank_issues_enabled: true
