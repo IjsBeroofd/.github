@@ -11,33 +11,36 @@ Write for someone who has not read the code. Plain words, short sentences.
 Each section is a few sentences at most. File paths, line numbers, commits,
 commands and step lists go in the Appendix, never above it.
 
-NO OPEN QUESTIONS. Resolve a gap before filing and fold the answer in.
-An issue is a decision that has been made, not a question.
+Label the kind: `bug` for a defect, `enhancement` for a feature or change.
 
-The PLAN is not the issue. Post the proposed solution as a comment.
+NO OPEN QUESTIONS. Resolve a gap before filing and fold the answer in.
+An issue that needs the owner's decision is labelled `needs-ruling` and
+states the choice to be made.
+
+The PLAN is not the issue. It is one comment, edited in place. Design that
+spans issues or outlasts one goes in the repo's docs/, linked from the plan.
 -->
 
-## What
+## Story
 
-<!-- The problem or the change, stated as fact, in plain language. -->
+<!--
+Required for features; optional otherwise. One line:
+As <actor>, I want <outcome>, so that <benefit>.
+The actor is a real role (operator, integrator, Grafana user, the fleet),
+never "the system" or "a developer". If none fits, delete this section.
+-->
 
-## Why
+## Problem
 
-<!-- What goes wrong if this is left alone. If nothing is broken today, say what
-will break and when. -->
+<!--
+What is wrong or missing, stated as fact, and what breaks if it is left alone.
+If nothing is broken today, say what will break and when. Name any deadline
+or trigger, e.g. "before the commercial environment goes live".
+-->
 
-## Value
+## Affects
 
-<!-- What is better once this is resolved. -->
-
-## Who
-
-<!-- Who gets that value: operators, a customer, the fleet, whoever picks this up next. -->
-
-## When
-
-<!-- Optional. A deadline or trigger, e.g. "before the commercial environment goes
-live". Delete this section if there is none. -->
+<!-- Defects only; delete otherwise. Version, environment, observed vs expected. -->
 
 ## Acceptance criteria
 
@@ -48,6 +51,10 @@ A criterion that cannot fail is not a criterion. How it is proven belongs in the
 
 - [ ] 
 - [ ] 
+
+## Leads
+
+<!-- Optional. Directions worth trying; not a design. Delete if none. -->
 
 ## Appendix
 
