@@ -11,14 +11,15 @@ Write for someone who has not read the code. Plain words, short sentences.
 Each section is a few sentences at most. File paths, line numbers, commits,
 commands and step lists go in the Appendix, never above it.
 
-Label the kind: `bug` for a defect, `enhancement` for a feature or change.
+Label the kind: `bug` for a defect, `enhancement` for anything else.
 
 NO OPEN QUESTIONS. Resolve a gap before filing and fold the answer in.
-An issue that needs the owner's decision is labelled `needs-ruling` and
+Exception: an issue that needs the owner's decision is labelled `needs-ruling` and
 states the choice to be made.
 
-The PLAN is not the issue. It is one comment, edited in place. Design that
-spans issues or outlasts one goes in the repo's docs/, linked from the plan.
+The PLAN is not the issue: post it as one comment, edited in place. Design
+spanning issues or outliving this one goes in the repo's docs/, linked from
+the plan.
 -->
 
 ## Story
@@ -27,7 +28,8 @@ spans issues or outlasts one goes in the repo's docs/, linked from the plan.
 Required for features; optional otherwise. One line:
 As <actor>, I want <outcome>, so that <benefit>.
 The actor is a real role (operator, integrator, Grafana user, the fleet),
-never "the system" or "a developer". If none fits, delete this section.
+never "the system" or "a developer". If none fits, it is internal work:
+delete this section.
 -->
 
 ## Problem
